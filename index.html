@@ -9,15 +9,15 @@
 <body>
 <div class="container">
     <header>
-        <h1>Berapa tahun yang gue butuhin agar gue bisa mandiri finansial dan ngga perlu kerja lagi?</h1>
+        <h1>Berapa tahun yang gue butuhin agar bisa mandiri finansial dan ngga perlu kerja lagi?</h1>
     </header>
     <div class="loginForm">
         <form method="POST" action="#">
-            <input id="spend" class="spend" type="number" name="spend" placeholder="Pengeluaran perbulan"
+            <input id="spend" class="spend" type="number" name="spend" placeholder="Pengeluaran kamu perbulan (Rp)"
                    autocomplete="off" onkeypress="return event.charCode >= 48" min="1"><br>
-            <input id="invest" class="invest" type="number" name="invest" placeholder="Investasi perbulan"
+            <input id="invest" class="invest" type="number" name="invest" placeholder="Investasi kamu perbulan (Rp)"
                    autocomplete="off" onkeypress="return event.charCode >= 48" min="1"><br>
-            <input id="submit" onclick="mainFunction()" class="button" type="button" name="button" value="Lihat Tahun">
+            <input id="submit" onclick="mainFunction()" class="button" type="button" name="button" value="Hitung Tahun">
             <input id="result" class="result" type="text" name="result" value="0 Tahun " readonly>
         </form>
     </div>

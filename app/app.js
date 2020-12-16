@@ -1,6 +1,17 @@
 function mainFunction() {
 	var spend = document.getElementById("spend").value;
 	var invest = document.getElementById("invest").value;
+
+	if(spend == 0.0) {
+        document.getElementById("result").value = "0 Tahun";
+        return
+	}
+
+	if(invest == 0.0) {
+        document.getElementById("result").value = "∞ Tahun";
+        return
+	}
+
 	var numberOfYearsToBecomeFinanciallyIndependent = checkNumberOfYearsToBecomeFinanciallyIndependent(spend,invest);
 
     document.getElementById("result").value = numberOfYearsToBecomeFinanciallyIndependent + " Tahun";
