@@ -27,7 +27,9 @@ function checkNumberOfYearsToBecomeFinanciallyIndependent(
     var annualSpending = monthlySpending * countMonthPerYear;
 
     var magicNumberForFinanciallyIndependent = 25;
-    var amountMoneyForFinanciallyIndependent = annualSpending * magicNumberForFinanciallyIndependent;
+    var amountMoneyForFinanciallyIndependent = 
+	(annualSpending * magicNumberForFinanciallyIndependent) + 
+	((annualSpending * magicNumberForFinanciallyIndependent) * (4/100));
 
     var annualInvest = monthlyInvest * countMonthPerYear;
 
